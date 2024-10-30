@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BalancedStrings {
 	public static void main(String[] args) {
-		String str = "}{][(){()[]}";
+		String str = "{}[](){()[]}";
 		ArrayList<Character> al = new ArrayList<Character>();
 		for (int i = 0; i < str.length(); i++) {
 			if (al.size() > 0 && ((str.charAt(i) == '}' && al.get(al.size() - 1) == '{')
